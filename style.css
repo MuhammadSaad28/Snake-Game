@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    width: 100vw;
+    height: 100vh;
+} */
+.heading{
+   position: absolute;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+   font-weight: 800;
+   font-size: 50px;
+   z-index: 999;
+}
+#over{
+    position: absolute;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+   font-weight: 800;
+   font-size: 50px;
+   z-index: 999;
+}
+.body{
+    background-image: url(bg.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#board{
+    background: linear-gradient(rgb(224, 224, 136),rgb(101, 218, 140));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+    
+}
+.head{
+    background-color: grey;
+    border-radius: 12px;
+}
+.food{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.snake{
+    background-color: brown;
+    border-radius: 9px;
+    
+}
+
+/* Add position and styling for controls */
+.controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+}
+
+.controls  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.control-button {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border: none;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#left-button{
+    transform: translate(-50px,-10px);
+}
+#right-button{
+    transform: translate(50px,-12px);
+}
+#down-button{
+    transform: translate(0,-30px);
+}
+
+/* Add media queries for smaller screens */
+@media (max-width: 768px) {
+    .controls{
+        display: flex;
+    }
+    .heading {
+        font-size: 30px;
+    }
+
+    .control-button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+/* .buttons{
+    position: absolute;
+    
+    display: none;
+}
+@media (max-width:800px){
+    .body {
+        align-items: flex-start;
+    }
+    #board{
+        margin-top: 80px;
+    }
+    .buttons{
+        
+        display: flex;
+        transform: translate(40vw,-10vh);
+        
+        
+    }
+    button{
+        background-color: greenyellow;
+        color: rgb(154, 6, 6);
+        border: 1px solid black;
+    }
+    button:hover{
+        background-color: rgb(205, 242, 149);
+    }
+    
+    .up{
+        transform: translate(50px,-80px);
+        padding: 12px;
+    }
+    .down{
+        transform: translate(0,-10px);
+        padding: 12px;
+    }
+    .left{
+        transform: translate(-155px,-45px);
+        padding: 12px;
+    }
+    .right{
+        transform: translate(-20px,-45px);
+        padding: 12px;
+    }
+}
+
+@media (max-width:400px){
+    .body {
+        align-items: center;
+    }
+    #board{
+        transform: translate(0,-130px);
+        height: 55%;
+    }
+    .buttons{
+        
+        display: flex;
+        transform: translate(40vw,-10vh);
+        
+        
+    }
+    button{
+        background-color: greenyellow;
+        color: rgb(154, 6, 6);
+        border: 1px solid black;
+    }
+    button:hover{
+        background-color: rgb(205, 242, 149);
+    }
+    
+    .up{
+        transform: translate(10px,-80px);
+        padding: 12px;
+    }
+    .down{
+        transform: translate(-40px,-10px);
+        padding: 12px;
+    }
+    .left{
+        transform: translate(-155px,-45px);
+        padding: 12px;
+    }    
+    .right{
+        transform: translate(-80px,-45px);
+        padding: 12px;
+    }
+} */
